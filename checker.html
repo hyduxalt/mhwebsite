@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Griffles Cares</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/checker.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="../images/griffles1.jpeg">
+  <script src="./js/script.js" defer></script>
+  <script type="module" src="./js/checker.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Griffles Cares</h1>
+    </div>
+
+    <nav class="menubar">
+      <a href="index.html" class="menulink">Home</a>
+      <a href="stress.html" class="menulink">What's Stress?</a>
+      <a href="symptoms.html" class="menulink">Symptoms of Stress</a>
+      <a href="methods.html" class="menulink">Methods to Cope with Stress</a>
+      <a href="checker.html" class="menulink" id="current-page">Symptom Checker</a>
+      <a href="conclusion.html" class="menulink">Conclusion</a>
+      <a href="quiz.html" class="menulink">Quiz</a>
+      <a href="timer.html" class="menulink">Timer</a>
+      <a href="helplines.html" class="menulink">Helplines</a>
+      <a href="aboutus.html" class="menulink">About Us</a>
+    </nav>
+  </header>
+  <h1 class="headline">Symptom Checker</h1>
+
+
+  <div class="mainContent">
+    <p>Here is a quick test to find out how stressed you are and how to cope with it. </p>
+    <p>Select the option that is most accurate and press "Next".<br>You can return to the previous questions with the "Previous" button</p>
+    <br>
+    <p>Keyboard Shortcuts:</p>
+    <ul>
+      <li>Press 1-4 to select the options</li>
+      <li>Press Enter or Right Arrow to continue</li>
+      <li>Press Left Arrow to go to previous question</li>
+    </ul>
+
+
+    <div class="symptom-checker">
+      <div class="start-screen">
+        <h1>Symptom Checker</h1>
+        <h3>Find out what you're feeling stressed about and how you can cope.</h3>
+        <button tabindex="-1">Start</button>
+      </div>
+
+      <div class="end-screen">
+        <div class="methods-screen"> 
+          <h1 id="score"></h2>
+          <h3 id="details"></h3>
+          <br>
+          <h1 class="headline">Methods to Cope</h3>
+        </div>
+        <button tabIndex="-1" style="margin-top: 0;">Retry</button>
+      </div>
+
+      <div class="questions">
+        <div class="progress-report"></div>
+        <h2 id="question-title"></h2>
+        <div class="options">
+          <p id="option1" class="option"></p>
+          <p id="option2" class="option"></p>
+          <p id="option3" class="option"></p>
+          <p id="option4" class="option"></p>
+        </div>
+        <button id="prev" class="no-previous" tabIndex="-1">Previous</button>
+        <button id="next" class="no-selection" tabindex="-1">Next</button>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+
+ 
+  <a class="pageSelector" href="quiz.html">Previous</a>
+  <a class="pageSelector" href="timer.html">Next</a>
+
+  <br>
+</body>
+
+</html>

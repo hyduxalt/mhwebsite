@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>Griffles Cares</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/timer.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="../images/griffles1.jpeg">
+  <script src="./js/script.js" defer></script>
+  <script src="./js/timer.js" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+</head>
+
+<body>
+
+  <header>
+    <div id="title">
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Griffles Cares</h1>
+    </div>
+
+    <nav class="menubar">
+      <a href="index.html" class="menulink">Home</a>
+      <a href="stress.html" class="menulink">What's Stress?</a>
+      <a href="symptoms.html" class="menulink">Symptoms of Stress</a>
+      <a href="methods.html" class="menulink">Methods to Cope with Stress</a>
+      <a href="helplines.html" class="menulink">Helplines</a>
+      <a href="conclusion.html" class="menulink">Conclusion</a>
+      <a href="quiz.html" class="menulink">Quiz</a>
+      <a href="checker.html" class="menulink">Symptom Checker</a>
+      <a href="timer.html" class="menulink" id="current-page">Timer</a>
+      <a href="aboutus.html" class="menulink">About Us</a>
+    </nav>
+  </header>
+
+  <h1 class="headline">Study Timer</h1>
+  <div class="mainContent" style="text-align: center;">
+    <p>
+      This page includes a study timer to help increase your productivity while giving sufficient breaks to prevent
+      feeling overstressed.<br>
+      Enter the duration you want to study for in the study duration section, and how long you want the break to be
+      after the study time has elapsed.
+    </p>
+  </div>
+
+  <br><br>
+
+  <div class="timer-input">
+    <h3 class="subhead" id="mainhead">Study Duration:</h3>
+    <input class="timer" id="hoursStudy" type="number" min="0" max="23" placeholder="hrs">
+    <input class="timer" id="minutesStudy" type="number" min="0" max="59" placeholder="mins">
+  </div>
+
+
+  <div class="timer-input">
+    <h3 class="subhead" id="break">Break Duration:</h3>
+    <input class="timer" id="hoursBreak" type="number" min="0" max="23" placeholder="hrs">
+    <input class="timer" id="minutesBreak" type="number" min="0" max="59" placeholder="mins">
+    <div id="progress-bar">
+      <div id="timer-div">
+        <p id="demo"></p>
+        <button id="pause" style="display: none" class="timer-button">
+          <span class="material-symbols-outlined">pause</span>
+        </button>
+      </div>
+    </div>
+    <br><br>
+    <button id="enter" class="timer-button">
+      <span class="material-symbols-outlined">play_arrow</span>
+    </button>
+    <button id="cancel" style="display: none" class="timer-button">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <br><br>
+  </div>
+
+
+
+  <br></br>
+  <a class="pageSelector" href="checker.html">Previous</a>
+  <a class="pageSelector" href="aboutus.html">Next</a>
+
+
+
+  <br>
+</body>
+</html>
